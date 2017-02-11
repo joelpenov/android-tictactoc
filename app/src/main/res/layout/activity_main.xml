@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:id="@+id/board">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="33"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/noplayed"
+                android:onClick="playPiece"
+                android:tag="0"
+                android:layout_margin="20dp">
+            </ImageView>
+            <ImageView
+                android:layout_margin="20dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/noplayed"
+                android:onClick="playPiece"
+                android:tag="1">
+            </ImageView>
+            <ImageView
+                android:layout_margin="20dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/noplayed"
+                android:onClick="playPiece"
+                android:tag="2">
+            </ImageView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="33"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/noplayed"
+                android:onClick="playPiece"
+                android:tag="3">
+            </ImageView>
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/noplayed"
+                android:onClick="playPiece"
+                android:tag="4">
+            </ImageView>
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/noplayed"
+                android:onClick="playPiece"
+                android:tag="5">
+            </ImageView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="33"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/noplayed"
+                android:onClick="playPiece"
+                android:tag="6">
+            </ImageView>
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/noplayed"
+                android:onClick="playPiece"
+                android:tag="7">
+            </ImageView>
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/noplayed"
+                android:onClick="playPiece"
+                android:tag="8">
+            </ImageView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:background="?attr/colorBackgroundFloating"
+        android:id="@+id/menu"
+        android:layout_height="100dp"
+        android:visibility="gone">
+
+        <TextView
+            android:text="Red wins!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/winnerLabel"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:text="Start Over!"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:id="@+id/button"
+            android:layout_weight="1"
+            android:onClick="restartGameButton"
+            android:background="@android:color/holo_red_dark"
+            android:textSize="20sp"
+            android:textColor="@android:color/background_light" />
+    </LinearLayout>
+
+</LinearLayout>
